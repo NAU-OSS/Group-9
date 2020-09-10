@@ -9,7 +9,6 @@ Repository for Group 9
 
 ## Run
 
-`java Comparison "1.2222"`
-`java Comparison "-1.2222"`
-`java Comparison "+1.2222"`
-`java Comparison "+1.222v"`
+`F5` In VS
+
+Get Java extensions
