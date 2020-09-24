@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Battle pokemon randomly">
+    <title>PokeBattler</title>
+   
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <br>
+    <h1 class="text-center">PokeBattler</h1>
+    <div class="container">
+      <div class="row mb-2" id="battle" style="visibility: hidden;">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <div id="leftResults" class="card">
+                <div class="card-body">
+                  <h5 id="leftName" class="card-title"></h5>
+                  <div id="leftHP"></div>
+                  <div id="leftAttack"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" id="leftImg" width="200" height="250" role="img" focusable="false"></img>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <div id="rightResults" class="card">
+                <div class="card-body">
+                  <h5 id="rightName" class="card-title"></h5>
+                  <div id="rightHP"></div>
+                  <div id="rightAttack" ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" id="rightImg" width="200" height="250" role="img" focusable="false"></img>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <br>
+          <div class="text-center">
+            <div class="spinner-border" id="loading" role="status" style="visibility: hidden;">
+              <span class="sr-only">Loading...</span>
+            </div>
+  
+          </div>
+          <a class="btn btn-primary" style="width: 100%;" id="battleButton" onclick="fetchPokemon()">Click here to battle two random pokemon</a>
+          <br>
+          <div id="results" class="card"></div>
+        </div>
+      </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  
+    <script src="js/battle/index.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>
